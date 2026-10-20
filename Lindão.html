@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Arquivo secretasso</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.tela{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+input{
+    padding:10px;
+    margin:10px;
+    width:200px;
+}
+
+button{
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+#pagina2{
+    display:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Tela de senha -->
+<div class="tela" id="login">
+<h2>Põe a senha</h2>
+
+<input type="password" id="senha" placeholder="Senha hiper mega segura">
+<br>
+
+<button onclick="verificarSenha()">Filé</button>
+</div>
+
+
+<!-- Segunda tela -->
+<div  id="pagina2">
+    <h1 style="text-align: center;">
+        O final desta missão está quase a chegar, procure um lugar onde cavalos gostam de ficar.</h1>
+        
+        <h3 style="text-align: center;">
+        Entre feno, cascos e relinchos no ar, vá até a casa dos cavalos para a surpresa encontrar.</h3>
+      
+</div>
+
+
+<script>
+function verificarSenha(){
+    var senha = document.getElementById("senha").value;
+
+    if(senha === "2026"){
+        document.getElementById("login").style.display = "none";
+        document.getElementById("pagina2").style.display = "block";
+    }else{
+        alert("Oce errou fei zé!!!!!!!!!! MELHORE!!!");
+    }
+}
+</script>                                                                                                                                                                                                                                                                                                                                                                           
+
+</body>
+</html>
+    
